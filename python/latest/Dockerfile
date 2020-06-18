@@ -13,7 +13,7 @@ RUN pip install \
     python-dateutil \
     pytz \
     six \
-    python3-matplotlib
+    matplotlib
 
 # Install code-runner
 ADD https://github.com/prasmussen/glot-code-runner/releases/download/2017-04-12/runner /home/glot/runner
