@@ -1,5 +1,5 @@
 FROM python:latest
-MAINTAINER Petter Rasmussen "petter.rasmussen@gmail.com"
+MAINTAINER Arjun Komath "arjunkomath@gmail.com"
 
 # Add user
 RUN groupadd glot
@@ -12,7 +12,8 @@ RUN pip install \
     numpy \
     python-dateutil \
     pytz \
-    six
+    six \
+    python3-matplotlib
 
 # Install code-runner
 ADD https://github.com/prasmussen/glot-code-runner/releases/download/2017-04-12/runner /home/glot/runner
