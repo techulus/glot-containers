@@ -1,4 +1,4 @@
-FROM python:latest
+FROM python:3.8.3
 MAINTAINER Arjun Komath "arjunkomath@gmail.com"
 
 # Add user
