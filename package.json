@@ -1,0 +1,23 @@
+{
+  "name": "glot-containers",
+  "version": "1.0.0",
+  "description": "glot-containers",
+  "main": "run_tests.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techulus/glot-containers.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techulus/glot-containers/issues"
+  },
+  "homepage": "https://github.com/techulus/glot-containers#readme",
+  "devDependencies": {
+    "glob": "^7.1.6"
+  }
+}
