@@ -16,5 +16,11 @@ jobs:
           version: 10.13.x
       - name: install deps
         run: npm install
+      - name: Docker Login
+        uses: azure/docker-login@v1
+        with:
+          login-server: docker.pkg.github.com
+          username: $GITHUB_ACTOR
+          password: ${{ secrets.GITHUB_TOKEN }}
       - name: test and push
         run: node run_tests_and_push.js
