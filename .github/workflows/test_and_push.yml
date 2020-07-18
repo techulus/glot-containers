@@ -1,0 +1,20 @@
+name: Test and Push
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          version: 10.13.x
+      - name: install deps
+        run: npm install
+      - name: test and push
+        run: node run_tests_and_push.js
