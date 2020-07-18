@@ -39,7 +39,7 @@ runTest = async () => {
 
     let file, folder, testFiles;
 
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < testFiles.length; i++) {
       file = imageFiles[i]
       folder = file.replace('/Dockerfile', '')
 
