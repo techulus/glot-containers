@@ -1,8 +1,0 @@
-{
-  "language": "nim",
-  "files": [{
-    "name": "main.nim",
-    "content": "echo(\"Hello World!\")"
-  }]
-}
-
