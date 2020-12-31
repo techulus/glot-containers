@@ -52,7 +52,7 @@ runTest = async () => {
       for (let j = 0; j < testFiles.length; j++) {
         // ======= build
         console.log('build', imageName)
-        await runCommand(`docker build ./${folder} -t ${imageName}`);
+        await runCommand(`docker build --pull ./${folder} -t ${imageName}`);
 
         // ======= run
         console.log('run', imageName)
